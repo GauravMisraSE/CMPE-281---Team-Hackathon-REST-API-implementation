@@ -1,0 +1,2 @@
+# CMPE-281---Team-Hackathon-REST-API-implementation
+Objectives:  In this project, your team of 3-4 members will be building a multi-cloud Starbucks Drink Ordering portal based on the Restbucks CRUD REST API design discussed in class.  Each team member will be building a component of the solution in their own AWS account.  In addition, the team should also build a PaaS Based Portal deployed either in AWS Elastic Beanstalk or Heroku PaaS.
