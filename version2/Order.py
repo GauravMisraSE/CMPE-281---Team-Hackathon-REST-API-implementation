@@ -2,7 +2,7 @@ import uuid
 from pymongo import MongoClient
 #from urlparse import urlparse
 
-client = MongoClient('localhost', 27017)
+client = MongoClient('ec2-54-193-71-217.us-west-1.compute.amazonaws.com', 27017)
 db = client['orderdb']
 collection = db['orders']
 posts = db.posts
