@@ -1,10 +1,18 @@
-# CMPE-281---Team-Hackathon-REST-API-implementation
+# CMPE-281-Team-Hackathon-REST-API-implementation
 
-# Objectives:  
-In this project, your team of 3-4 members will be building a multi-cloud Starbucks Drink Ordering portal based on the Restbucks CRUD REST API design discussed in class.  Each team member will be building a component of the solution in their own AWS account.  In addition, the team should also build a PaaS Based Portal deployed either in AWS Elastic Beanstalk or Heroku PaaS.
+### Tech stack:
+### DB: Mongo
+### APIs: Pyhton flask
 
-# Tenant API Back-Ends:
-Two or more REST API back-ends that is implemented in different languages/technologies. 
-Each Tenant API back-end is implemented by one team member and deployed to separate AWS VPCs.
-Implementation of the API should be based on CRUD Restbucks Design.  Teams are free to extend this API.
-Implementation of APIs should be backed by a 3-Node NoSQL database cluster.  Each team member can select their choice of NoSQL DB.  Team member can chose the same NoSQL DB Technology.
+### AWS config:
+#### Starbucks API node: holds the API endpoints for placing, paying, updating, viewing and deleting orders.
+#### Mongo Primary: Receives write and read requests
+#### Mongo Slaves: Can only be used for reading. Data written to Primary is replicated to slaves.
+
+### Class description:
+OrderItem: class for taking quantity, name, milk and size.  
+Order: for generating payload which is saved as a document, this class also contains method to delete order from db.  
+OrderResource: contains API routes.  
+Status: for modelling order status and message.  
+sweeper.py: Runs continuously in the background and updates order statuses after every 60 seconds.  
+
