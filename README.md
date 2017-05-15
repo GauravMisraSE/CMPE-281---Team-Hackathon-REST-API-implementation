@@ -1,4 +1,6 @@
-# CMPE-281-Team-Hackathon-REST-API-implementation
+# CMPE-281-Team-Hackathon-REST-API-implementation  
+
+# Please refer the master branch to view the final deployed code.  
 
 ### Tech stack:
 ### DB: Mongo
@@ -16,7 +18,6 @@ OrderResource: contains API routes.
 Status: for modelling order status and message.  
 sweeper.py: Runs continuously in the background and updates order statuses after every 60 seconds.  
   
-Please refer the master branch to view the final deployed code.
 
 ### Youtube Demonstration link:  
 https://www.youtube.com/watch?v=bH9-TJym5Ek
