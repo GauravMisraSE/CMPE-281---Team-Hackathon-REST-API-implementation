@@ -17,3 +17,9 @@ Status: for modelling order status and message.
 sweeper.py: Runs continuously in the background and updates order statuses after every 60 seconds.  
   
 Please refer the master branch to view the final deployed code.
+
+### Youtube Demonstration link:  
+https://www.youtube.com/watch?v=bH9-TJym5Ek
+
+### Link to GitHub Project shared by the team for Portal code -  
+https://github.com/binoymichael/cmpe281-restbucks-storefront
